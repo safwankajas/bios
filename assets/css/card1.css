@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+
+.card {
+    position: relaive;
+    width: 350px;
+    height: 520px;
+    margin: 50px;
+    background-size: cover;
+    border-radius: 40px;
+    overflow: hidden;
+    align-content: center;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+.tec{
+    background: url(./images/img3.jpg) no-repeat center;
+
+}
+.gam{
+    background: url(./images/img4.jpg) no-repeat center;
+
+}
+.gen{
+    background: url(./images/img1.jpg) no-repeat center;
+
+}
+
+
+.event-info {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "empty title title"
+    "info info action";
+    justify-items: center;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 20px;
+}
+
+.event-info * {
+    position: relative;
+}
+
+.title {
+    grid-area: title;
+    color: white;
+    padding: 10px;
+    background-color: #8ea6049d;
+    
+    border-radius: 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.additional-info {
+    grid-area: info;
+}
+
+.additional-info p{
+    font-size: 0.9em;
+   
+    color: white;
+    font-weight: 600;
+    margin-top: 8px;
+    letter-spacing: 0.7px;
+}
+.additional-info p:hover
+{
+    color: #dd5e89;
+}
+
+.action {
+    grid-area: action;
+}
+
+/* .price {
+    position: absolute;
+    top: -20%;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #dd5e89;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+} */
+
+.event-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 114%;
+    height: 300%;
+    background:#114c5fad;
+    transform: rotate(-10deg);
+    border-top-right-radius: 100px;
+}
+
+   
+
+
+
+.action {
+    border: 1px solid;
+    outline: none;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.action:hover {
+    background-color: #fff;
+    color: #dd5e89;
+}
