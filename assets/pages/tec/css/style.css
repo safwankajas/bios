@@ -109,7 +109,7 @@ nav ul ul ul li{
 	margin-left: auto;
   margin-right: auto ;
   font-size: 16px;
-  background-color: #161616;
+  background-color: #111519;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +192,7 @@ nav ul ul ul li{
 	position: relative;
 	width: 100%;
 	height: 400px;
-	background-color: rgba(24, 83, 122, 0.6);
+	background-color:rgba(255, 255, 255, 0.788);
 	opacity: 0;
 	transition: height linear 0.4s, opacity linear 0.2s;
   }
@@ -234,9 +234,9 @@ nav ul ul ul li{
   }
   
   .separator {
-	width: 20%;
-	height: 6px;
-	background-color: #17537a;
+	width: 80%;
+	height: 3px;
+	background-color: red;
 	margin-bottom: 16px;
   }
   
@@ -261,24 +261,25 @@ nav ul ul ul li{
   }
   
   .info span {
-	color: #18537a;
+	color: red;
 	font-weight: bolder;
   }
   
   .action {
-	color: #fff;
+	color: #a80404;
 	font-family: 'ubuntu',sans-serif;
-	background-color: rgba(255, 0, 0, 0.658);
+	background: none;
+	border:4px solid #a80404;
 	position: absolute;
 	top: -100px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 60%;
+	width: 50%;
 	outline: none;
 	cursor: pointer;
 	border-radius: 8px;
-	padding: 10px;
-	text-transform: uppercase;
+	padding: 8px;
+	
 	font-size: 1.3em;
 	font-weight: 400;
 	
@@ -294,7 +295,7 @@ nav ul ul ul li{
 	color: #fff;
 	border-radius: 8px;
 	
-	background: none;
+	background: #a80404;
 	font-weight: 400;
 	border:2px solid #fff;
 	/* background-color: rgba(220, 20, 60, 0.712); */
@@ -391,7 +392,7 @@ nav ul ul ul li{
 	font-weight: 500;
   }
 /*--responsive for mobile phone--*/
-@media(max-width:380px){
+@media(max-width:360px){
 	.item-container{
 		width: 100%;
 		height: 500px;
