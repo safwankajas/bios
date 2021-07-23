@@ -1,54 +1,142 @@
-<html lang="en">
-<head>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pace JS | Preloader</title>
-    <meta http-equiv="refresh"
-    content="6; url =line.html" /> 
-    <link rel="stylesheet" href="./assets/css/loading.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="./assets/js/pace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-</head>
-<body>
-    <h1 class="title ">
-        $:~ Engineering is the closest things 
-            to magic that exists in the world
-   </h1>
+<html>
+    <head>
+        <title>Safwan Kajas</title>
+        <!-- <link href="style.css" rel="stylesheet" type="text/css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fredoka+One&family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/25ab76a137.js" crossorigin="anonymous"></script>        
+    </head>
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-image: linear-gradient(rgba(204, 143, 72, 0.233),rgba(0, 0, 0, 0.205)),url(pic4.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.hero
+{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+h1
+{
+    font-size:40px;
+    letter-spacing: 10px;
+    font-family: 'Poppins', sans-serif;   
+}
+hr
+{
+    width: 50%;
+    margin: 30px auto;
+    border: .2px solid;
 
-        <div id="preloader">
-            <div class="p "><img src="./assets/image/bios logo.png" alt=""></div>
-        </div>
+}
+h6 
+{
+   
+    font-size: 9px;
+    letter-spacing: 7px;
+    font-family: 'Poppins', sans-serif; 
+    color: rgba(243, 156, 106, 0.808);
+}
+.social
+{
+    top: 90%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    display: flex;
 
-        <script>
+}
+.social a
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;}
+.social a .fab
+{
+    font-size: 30px;
+    line-height: 50px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+    
+}
+.social a::after
+{
+    content: '';
+    width: 80px;
+    height: 80px;
+    top: -90px;
+    left: 0;
+    background:linear-gradient(-45deg,#900C3F,#FFC300);
+    position: absolute;
+    transition: 0.5s;
+}
+.social a:hover::after
+{
+    top: 0;
 
-        paceOptions = {
-        ajax: true,
-        document: true,
-        eventLag: false
-        };
+}
+.social a:hover .fab
+{
+    color: #fff;
+}
+.social a:hover
+{
+    transform: translateY(-10px);
+}
 
-        Pace.on('done', function() {
-        $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+h7
+{
+    font-size:10px;
+    letter-spacing: 5px;
+    font-family: 'Poppins', sans-serif;   
+}
+
+</style>
+
+    <body>
+        <header>
+            <div class="hero">
+           
+            <h1> COMMING SOON</h1>
+            
+        
+            <h6>Stay Tuned For Something Awesome</h6>
+            
+        
+             </div>
+             <div class="social">
+                 
+                 <br>
+                <a href="https://www.instagram.com/safwankajas/"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.facebook.com/profile.php?id=100003221146387"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
 
 
-        $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+             </div>
 
-        TweenMax.from(".title", 2, {
-             delay: 1.8,
-                  y: 10,
-                  opacity: 0,
-                  ease: Expo.easeInOut
-            })
-       });
-
-      </script>
-
-</body>
+        </header>
+    </body>
 </html>
